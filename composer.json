@@ -12,7 +12,8 @@
     "dingo/api": "1.0.x@dev",
     "laravel/framework": "5.3.*",
     "mashape/unirest-php": "^3.0",
-    "predis/predis": "^1.1"
+    "open-resource-manager/client-php": "dev-master",
+    "predis/predis": "~1.0"
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",
