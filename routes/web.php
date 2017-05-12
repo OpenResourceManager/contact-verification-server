@@ -11,11 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
+Route::get('/', ['uses' => 'VerifyFrontEndController@home', 'as' => 'home']);
 Route::group(['prefix' => 'verify'], function () {
     Route::get('/{token}', ['uses' => 'VerifyFrontEndController@verify', 'as' => 'api.get.verify.token']);
     Route::get('/', ['uses' => 'VerifyFrontEndController@verify', 'as' => 'api.get.verify']);

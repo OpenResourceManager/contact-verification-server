@@ -7,6 +7,19 @@ use Illuminate\Http\Request;
 class VerifyFrontEndController extends Controller
 {
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function home()
+    {
+        return view('welcome');
+    }
+
+    /**
+     * @param Request $request
+     * @param null $token
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function verify(Request $request, $token = null)
     {
         if ($request->isMethod('post') && empty($token)) {
