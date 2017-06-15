@@ -47,7 +47,7 @@ class VerifyFrontEndController extends Controller
                 'verification_callback' => 'required|url'
             ]);
 
-            if ($validator->validate()) {
+            if (!$validator->fails()) {
                 return redirect($response['verification_callback']);
             }
         }
