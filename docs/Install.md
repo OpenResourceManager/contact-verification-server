@@ -33,9 +33,9 @@ PHP Packages:
 * Initialize the DB
 
 ```mysql
-create database orm;
-CREATE USER 'orm'@'localhost' IDENTIFIED BY 'SOMESTRONGPASSWORD';
-GRANT ALL PRIVILEGES ON orm.* To 'orm'@'localhost';
+create database verification;
+CREATE USER 'verification'@'localhost' IDENTIFIED BY 'SOMESTRONGPASSWORD';
+GRANT ALL PRIVILEGES ON verification.* To 'verification'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
@@ -69,3 +69,4 @@ sudo -u nginx vi .env;
 ```bash
 # Run DB Migrations
 sudo -u nginx php artisan migrate --force;
+```
