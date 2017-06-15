@@ -1,17 +1,19 @@
 {
-  "name": "laravel/laravel",
-  "description": "The Laravel Framework.",
-  "keywords": [
-    "framework",
-    "laravel"
-  ],
+  "name": "open-resource-manager/asset-verification-server",
+  "description": "Asset verification server used to verify mobile phones and emails registered in ORM core.",
+  "keywords": ["orm", "open resource manager", "laravel", "verification"],
   "license": "MIT",
   "type": "project",
+  "authors": [
+    {
+      "name": "Alex Markessinis",
+      "email": "markea125@gmail.com"
+    }
+  ],
   "require": {
     "php": ">=5.6.4",
     "dingo/api": "1.0.x@dev",
     "laravel/framework": "5.3.*",
-    "mashape/unirest-php": "^3.0",
     "open-resource-manager/client-php": "dev-master",
     "predis/predis": "~1.0"
   },
@@ -47,7 +49,10 @@
     ],
     "post-install-cmd": [
       "Illuminate\\Foundation\\ComposerScripts::postInstall",
-      "php artisan optimize"
+      "composer dump-autoload -o",
+      "php artisan optimize",
+      "php artisan route:cache",
+      "php artisan api:cache"
     ],
     "post-update-cmd": [
       "Illuminate\\Foundation\\ComposerScripts::postUpdate",
@@ -56,6 +61,7 @@
   },
   "config": {
     "preferred-install": "dist",
-    "sort-packages": true
+    "sort-packages": true,
+    "optimize-autoloader": true
   }
 }
