@@ -8,14 +8,17 @@ Asset verification server used to verify mobile phones and emails registered in 
 
 ---
 
-### Features
+##### Features
 
 * REST API interface
 * Verification front end
 * Verify tokens via GET and POST
 
-### Documentation
+##### Installation
 
-For installation and update:
+See the [installation docs](Install.md)
 
-* [Read the docs here](https://asset-verification-server.readthedocs.io/en/latest/)
+##### Update
+
+See the [update docs](Update.md)
+
