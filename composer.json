@@ -24,6 +24,9 @@
     "symfony/css-selector": "3.1.*",
     "symfony/dom-crawler": "3.1.*"
   },
+  "suggest": {
+    "open-resource-manager/core": "Core API backing the Open Resource Manager ecosystem."
+  },
   "autoload": {
     "classmap": [
       "database"

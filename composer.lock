@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "54f7af3870241a1460d20142461a06c4",
+    "hash": "62a967ce6ea5e9fc73869c39ca3e8fee",
     "content-hash": "5f4be19375c6e18b33dba0ebc2bd1f8f",
     "packages": [
         {
@@ -1111,12 +1111,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OpenResourceManager/client-php.git",
-                "reference": "854d5ba723c6aef9f87a78a44c386c7f5250d5a2"
+                "reference": "55eec2f0a3e6e54aacd37097b9ef415675fff223"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OpenResourceManager/client-php/zipball/854d5ba723c6aef9f87a78a44c386c7f5250d5a2",
-                "reference": "854d5ba723c6aef9f87a78a44c386c7f5250d5a2",
+                "url": "https://api.github.com/repos/OpenResourceManager/client-php/zipball/55eec2f0a3e6e54aacd37097b9ef415675fff223",
+                "reference": "55eec2f0a3e6e54aacd37097b9ef415675fff223",
                 "shasum": ""
             },
             "require": {
@@ -1149,7 +1149,7 @@
                 "open resource manager",
                 "orm"
             ],
-            "time": "2017-06-15 18:36:43"
+            "time": "2017-06-16 02:26:07"
         },
         {
             "name": "paragonie/random_compat",
