@@ -26,7 +26,7 @@ class TokenVerificationController extends ApiController
         if (in_array($response->code, $valid_codes)) {
             return $this->response->accepted('/', ['message' => $response->body->message, 'code' => $response->code, 'verification_callback' => $response->body->verification_callback, 'upstream_app_name' => $response->body->upstream_app_name]);
         } else {
-            return $this->response->errorInternal($response->body->message, $response->code);
+            return $this->response->errorNotFound($response->body->message, $response->code);
         }
     }
 }
