@@ -52,7 +52,7 @@
         </div>
     </div>
 </nav>
-<div class="flash-message">
+<div class="flash-message center-div">
     @foreach (['danger', 'warning', 'success', 'info'] as $msg)
         @if(Session::has('alert-' . $msg))
             <p class="alert alert-{{ $msg }} center-div">{{ Session::get('alert-' . $msg) }} <a href="#" class="close"
