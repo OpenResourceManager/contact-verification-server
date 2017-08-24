@@ -36,7 +36,12 @@ class VerifyFrontEndController extends Controller
             $response = $dispatcher->post('v1/verify', ['token' => $token]);
 
             if (in_array($response['code'], $valid_codes)) {
-                $request->session()->flash('alert-success', $response['message']);
+                if (!empty($response['verification_callback'])) {
+                    $request->session()->flash('alert-success', $response['message'] . ' You will be redirect to: ' . $response['verification_callback'] . ' in 5 seconds...');
+                } else {
+                    $request->session()->flash('alert-success', $response['message']);
+                }
+
             } elseif ($response['code'] == 404) {
                 $request->session()->flash('alert-warning', 'That token could not be found!');
             } else {

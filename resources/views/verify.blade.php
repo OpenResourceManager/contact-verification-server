@@ -43,7 +43,9 @@
     <script type="text/javascript">
       var callback = document.getElementById('callback').value
       if (callback) {
-        window.location.replace(callback);
+        window.setTimeout(function () {
+          window.location.href = callback;
+        }, 5000);
       }
     </script>
     <!--  <script src="/js/validator.min.js"></script>
