@@ -13,7 +13,7 @@ class VerifyFrontEndController extends Controller
      */
     public function home()
     {
-        return view('welcome');
+        return redirect(route('api.get.verify'));
     }
 
     /**
@@ -47,11 +47,9 @@ class VerifyFrontEndController extends Controller
                 'verification_callback' => 'required|url'
             ]);
 
-            if (!$validator->fails()) {
-                return redirect($response['verification_callback']);
-            }
+            return view('verify', ['callback' => (!$validator->fails()) ? $response['verification_callback'] : '']);
         }
 
-        return view('verify');
+        return view('verify', ['callback' => '']);
     }
 }

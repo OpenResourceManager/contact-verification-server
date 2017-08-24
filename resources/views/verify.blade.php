@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+    <input type="hidden" readonly="readonly" id="callback" name="callback" value="{{$callback}}">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -11,7 +12,8 @@
                             {!! csrf_field() !!}
                             <div class="form-group{{ $errors->has('token') ? ' has-error' : '' }}">
                                 <div class="col-md-9">
-                                    <input type="text" placeholder="Verification Token" class="form-control" name="token"
+                                    <input type="text" placeholder="Verification Token" class="form-control"
+                                           name="token"
                                            value="{{ old('token') }}" required>
                                     <div class="help-block with-errors"></div>
                                     @if ($errors->has('token'))
@@ -38,6 +40,12 @@
 @endsection
 
 @section('foot')
+    <script type="text/javascript">
+      var callback = document.getElementById('callback').value
+      if (callback) {
+        window.location.replace(callback);
+      }
+    </script>
     <!--  <script src="/js/validator.min.js"></script>
     <script type="text/javascript">
       $('#verify_token_form').validator();
