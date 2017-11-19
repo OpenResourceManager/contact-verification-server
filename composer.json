@@ -10,11 +10,15 @@
       "email": "markea125@gmail.com"
     }
   ],
+  "support": {
+    "issues": "https://github.com/OpenResourceManager/AssetVerificationServer/issues",
+    "source": "https://github.com/OpenResourceManager/AssetVerificationServer"
+  },
   "require": {
-    "php": ">=5.6.4",
+    "php": ">=7.1.0",
     "dingo/api": "1.0.x@dev",
     "laravel/framework": "5.3.*",
-    "open-resource-manager/client-php": "dev-master",
+    "open-resource-manager/client-php": "~1.0",
     "predis/predis": "~1.0"
   },
   "require-dev": {
