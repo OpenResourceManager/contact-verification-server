@@ -1107,16 +1107,16 @@
         },
         {
             "name": "open-resource-manager/client-php",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OpenResourceManager/client-php.git",
-                "reference": "43d1209b870d0de68fe4ee40bb71595839ef213e"
+                "reference": "f5d252a88e10b0a577f3c2ef5b86303fb62961f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OpenResourceManager/client-php/zipball/43d1209b870d0de68fe4ee40bb71595839ef213e",
-                "reference": "43d1209b870d0de68fe4ee40bb71595839ef213e",
+                "url": "https://api.github.com/repos/OpenResourceManager/client-php/zipball/f5d252a88e10b0a577f3c2ef5b86303fb62961f4",
+                "reference": "f5d252a88e10b0a577f3c2ef5b86303fb62961f4",
                 "shasum": ""
             },
             "require": {
@@ -1149,7 +1149,7 @@
                 "open resource manager",
                 "orm"
             ],
-            "time": "2017-11-19 04:35:25"
+            "time": "2017-11-20 17:58:58"
         },
         {
             "name": "paragonie/random_compat",
