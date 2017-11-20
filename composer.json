@@ -14,6 +14,8 @@
     "issues": "https://github.com/OpenResourceManager/AssetVerificationServer/issues",
     "source": "https://github.com/OpenResourceManager/AssetVerificationServer"
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "require": {
     "php": ">=7.1.0",
     "dingo/api": "1.0.x@dev",
