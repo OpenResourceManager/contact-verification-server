@@ -6,20 +6,6 @@
  * Time: 8:53 PM
  */
 
-use OpenResourceManager\Laravel\Facade\ORM;
-
-/**
- * Get an ORM connection
- *
- * Reads environment vars and returns an ORM connection.
- *
- * @return ORM
- */
-function getORMConnection()
-{
-    return ORM::get();
-}
-
 /**
  * @param string $path
  * @return mixed|string

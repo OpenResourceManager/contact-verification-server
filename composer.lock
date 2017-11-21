@@ -1107,16 +1107,16 @@
         },
         {
             "name": "open-resource-manager/client-laravel",
-            "version": "v0.1.1",
+            "version": "v0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OpenResourceManager/client-laravel.git",
-                "reference": "7297aeebdefb71b9c330ee08f6cbf9cfa1524908"
+                "reference": "ae0bd28356e2466436ffdee368a82e6fec2c789e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OpenResourceManager/client-laravel/zipball/7297aeebdefb71b9c330ee08f6cbf9cfa1524908",
-                "reference": "7297aeebdefb71b9c330ee08f6cbf9cfa1524908",
+                "url": "https://api.github.com/repos/OpenResourceManager/client-laravel/zipball/ae0bd28356e2466436ffdee368a82e6fec2c789e",
+                "reference": "ae0bd28356e2466436ffdee368a82e6fec2c789e",
                 "shasum": ""
             },
             "require": {
@@ -1136,7 +1136,10 @@
             "autoload": {
                 "psr-4": {
                     "OpenResourceManager\\Laravel\\": "src/"
-                }
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1155,7 +1158,7 @@
                 "open resource manager",
                 "orm"
             ],
-            "time": "2017-11-21 20:12:56"
+            "time": "2017-11-21 21:01:53"
         },
         {
             "name": "open-resource-manager/client-php",
