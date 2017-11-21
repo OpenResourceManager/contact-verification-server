@@ -168,6 +168,7 @@ return [
          */
 
         Dingo\Api\Provider\LaravelServiceProvider::class,
+        OpenResourceManager\Laravel\ORMServiceProvider::class,
 
         //
 
@@ -227,6 +228,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'ORM' => OpenResourceManager\Laravel\Facade\ORM::class,
 
     ],
 

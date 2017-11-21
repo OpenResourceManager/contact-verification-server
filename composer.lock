@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "babd76170f6867c6b335e058bf68eb9d",
-    "content-hash": "569e38b6ea9e9589826d2a9367e1b5dd",
+    "hash": "361064f405e9c839fc8f3f72f15e7f65",
+    "content-hash": "54952d1f625d6627edc01b4405731db9",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1106,6 +1106,58 @@
             "time": "2017-11-04 11:48:34"
         },
         {
+            "name": "open-resource-manager/client-laravel",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpenResourceManager/client-laravel.git",
+                "reference": "7297aeebdefb71b9c330ee08f6cbf9cfa1524908"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpenResourceManager/client-laravel/zipball/7297aeebdefb71b9c330ee08f6cbf9cfa1524908",
+                "reference": "7297aeebdefb71b9c330ee08f6cbf9cfa1524908",
+                "shasum": ""
+            },
+            "require": {
+                "open-resource-manager/client-php": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "OpenResourceManager\\Laravel\\ORMServiceProvider"
+                    ],
+                    "aliases": {
+                        "ORM": "OpenResourceManager\\Laravel\\Facade\\ORM"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OpenResourceManager\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Markessinis",
+                    "email": "markea125@gmail.com"
+                }
+            ],
+            "description": "ORM client library with enhancements for Laravel",
+            "keywords": [
+                "client",
+                "larvel",
+                "open resource manager",
+                "orm"
+            ],
+            "time": "2017-11-21 20:12:56"
+        },
+        {
             "name": "open-resource-manager/client-php",
             "version": "v1.1.1",
             "source": {
@@ -1255,35 +1307,29 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.3.1",
+            "version": "3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "1119a9765990a24f4c5218a85032fb6f3a91eaff"
+                "reference": "bf329f6c1aadea3299f08ee804682b7c45b326a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/1119a9765990a24f4c5218a85032fb6f3a91eaff",
-                "reference": "1119a9765990a24f4c5218a85032fb6f3a91eaff",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/bf329f6c1aadea3299f08ee804682b7c45b326a2",
+                "reference": "bf329f6c1aadea3299f08ee804682b7c45b326a2",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0",
+                "php": "^5.6 || ^7.0",
                 "phpdocumentor/reflection-common": "^1.0.0",
                 "phpdocumentor/type-resolver": "^0.4.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
-                "doctrine/instantiator": "~1.0.5",
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^6.4"
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "^4.4"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "phpDocumentor\\Reflection\\": [
@@ -1302,7 +1348,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-11-15 19:01:54"
+            "time": "2017-11-10 14:09:06"
         },
         {
             "name": "phpdocumentor/type-resolver",
